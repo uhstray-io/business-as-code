@@ -15,4 +15,4 @@ The foundational technologies for Business as Code are as follows:
 
 
 ### Business as Code Foundational *PLATFORMS*
-   - [wikijs](deployments\wikijs\README.MD)   
+   - [wikijs](deployments/wikijs/README.MD)   
