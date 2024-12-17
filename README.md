@@ -13,6 +13,9 @@ The foundational technologies for Business as Code are as follows:
 
 ![Business as Code Foundational Technologies](.images/reference-architecture.png)
 
+### DevOps Labeling & Resource Strategy
+
+![DevOps Labeling & Resource Strategy](.diagrams/devops.drawio.png)
 
 ### Business as Code Foundational *PLATFORMS*
    - [wikijs](deployments/wikijs/README.MD)   
