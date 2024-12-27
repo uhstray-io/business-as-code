@@ -11,7 +11,7 @@ Business as Code is a series of artifacts, documentation, and automation to deve
 
 The foundational technologies for Business as Code are as follows:
 
-![Business as Code Foundational Technologies](.images/reference-architecture.png)
+![Business as Code Foundational Technologies](.images/reference-architecture.drawio.png)
 
 ### DevOps Labeling & Resource Strategy
 
