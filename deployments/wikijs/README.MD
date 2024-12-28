@@ -1,5 +1,4 @@
-# Deploying Wiki JS as your business site
-## Enable youtube videos to be embeded on the wiki
+# Enable youtube videos to be embeded on your Wiki.js Site
 - [Article and source material](https://github.com/requarks/wiki/discussions/4580) 
 
 1. Log in in as an admin to your wikijs site
