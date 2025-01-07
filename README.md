@@ -17,5 +17,10 @@ The foundational technologies for Business as Code are as follows:
 
 ![DevOps Labeling & Resource Strategy](.diagrams/devops.drawio.png)
 
-### Business as Code Foundational *PLATFORMS*
-   - [wikijs](deployments/wikijs/README.MD)   
+### Business as Code Foundational Repositories
+   - [backbone](https://github.com/uhstray-io/backbone)
+   - [ai & ml](https://github.com/uhstray-io/ainml)
+   - [community](https://github.com/uhstray-io/community)
+   - [observability](https://github.com/uhstray-io/o11y)
+   - [operations](https://github.com/uhstray-io/ops)
+   - [wisbot](https://github.com/uhstray-io/wisbot)
