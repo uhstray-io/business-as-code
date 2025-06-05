@@ -1,5 +1,5 @@
 # business-as-code
-Open-source AI, Platforms and Automation for startups and small business. Customizable, scalable, extensible, and performant!
+Privacy focused Open-source AI, Platforms and Automation for startups and small business. Customizable, scalable, extensible, and performant!
 
 ### Business as Code Foundational Repositories
    - [autobox - infrastructure backbone](https://github.com/uhstray-io/autobox)
