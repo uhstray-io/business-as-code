@@ -25,8 +25,8 @@ The foundational technologies for Business as Code are as follows:
 ### Business as Code Foundational Repositories
    - [autobox - infrastructure backbone](https://github.com/uhstray-io/autobox)
    - [WisLLM - ai & ml orchestrator](https://github.com/uhstray-io/WisLLM) - Private WIP
-   - [community](https://github.com/uhstray-io/community)
-   - [content](https://github.com/uhstray-io/content)
+   - [community](https://github.com/uhstray-io/community) - WIP
+   - [content](https://github.com/uhstray-io/content) - WIP
    - [o11y - uhstray.io full-stack observability](https://github.com/uhstray-io/o11y)
    - [Wisbot - search, event, and llm orchestrator](https://github.com/uhstray-io/wisbot)
    - [workstations - developer device management & setup](https://github.com/uhstray-io/workstations)
