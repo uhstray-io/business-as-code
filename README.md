@@ -23,12 +23,10 @@ The foundational technologies for Business as Code are as follows:
 ![DevOps Labeling & Resource Strategy](.diagrams/devops.drawio.png)
 
 ### Business as Code Foundational Repositories
-   - [cloud backbone](https://github.com/uhstray-io/cloud-backbone)
-   - [network backbone](https://github.com/uhstray-io/network-backbone)
-   - [security backbone](https://github.com/uhstray-io/security-backbone)
-   - [ai & ml](https://github.com/uhstray-io/ai)
+   - [autobox - infrastructure backbone](https://github.com/uhstray-io/autobox)
+   - [WisLLM - ai & ml orchestrator](https://github.com/uhstray-io/WisLLM) - Private WIP
    - [community](https://github.com/uhstray-io/community)
    - [content](https://github.com/uhstray-io/content)
-   - [observability](https://github.com/uhstray-io/o11y)
-   - [pipelines](https://github.com/uhstray-io/pipelines)
-   - [wisbot](https://github.com/uhstray-io/wisbot)
+   - [o11y - uhstray.io full-stack observability](https://github.com/uhstray-io/o11y)
+   - [Wisbot - search, event, and llm orchestrator](https://github.com/uhstray-io/wisbot)
+   - [workstations - developer device management & setup](https://github.com/uhstray-io/workstations)
