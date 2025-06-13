@@ -3,11 +3,11 @@ Privacy focused Open-source AI, Platforms and Automation for startups and small 
 
 ### Business as Code Foundational Repositories
    - [autobox - infrastructure backbone](https://github.com/uhstray-io/autobox)
-   - [WisLLM - ai & ml orchestrator](https://github.com/uhstray-io/WisLLM) - Private WIP
-   - [community](https://github.com/uhstray-io/community) - WIP
-   - [content](https://github.com/uhstray-io/content) - WIP
-   - [o11y - uhstray.io full-stack observability](https://github.com/uhstray-io/o11y)
    - [Wisbot - search, event, and llm orchestrator](https://github.com/uhstray-io/wisbot)
+   - [WisLLM - ai & ml orchestrator](https://github.com/uhstray-io/WisLLM) - WIP
+   - [community](https://github.com/uhstray-io/community) - (Coming Soon)
+   - [content](https://github.com/uhstray-io/content) - (Coming Soon)
+   - [o11y - uhstray.io full-stack observability](https://github.com/uhstray-io/o11y)
    - [workstations - developer device management & setup](https://github.com/uhstray-io/workstations)
 
 ## Business as Code Roles and MVP Goals
