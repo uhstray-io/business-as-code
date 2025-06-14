@@ -5,6 +5,7 @@ Privacy focused Open-source AI, Platforms and Automation for startups and small 
    - [autobox - infrastructure backbone](https://github.com/uhstray-io/autobox)
    - [Wisbot - search, event, and llm orchestrator](https://github.com/uhstray-io/wisbot)
    - [WisLLM - ai & ml orchestrator](https://github.com/uhstray-io/WisLLM) - WIP
+   - [data-warehouse - data warehousing for business-as-code](https://github.com/uhstray-io/data-warehouse)
    - [community](https://github.com/uhstray-io/community) - (Coming Soon)
    - [content](https://github.com/uhstray-io/content) - (Coming Soon)
    - [o11y - uhstray.io full-stack observability](https://github.com/uhstray-io/o11y)
