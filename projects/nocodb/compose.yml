@@ -1,0 +1,46 @@
+services: 
+  nocodb: 
+    depends_on: 
+      postgres: 
+        condition: service_healthy
+    env_file:
+    - path: ./.env
+      required: true
+    image: "nocodb/nocodb:latest"
+    container_name: nocodb
+    ports: 
+      - "8080:8080"
+    restart: always
+    volumes: 
+      - "nc_data:/usr/app/data"
+
+  postgres: 
+    container_name: postgres
+    image: postgres:16.6
+    ports:
+    - 5432:5432
+    env_file:
+    - path: ./.env
+      required: true
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10sdocker
+    restart: always
+    volumes:
+    - "db_data:/var/lib/postgresql/data"
+
+  watchtower:
+    command: "--schedule \"0 5 * * *\" --cleanup --label-enable"
+    container_name: watchtower
+    image: containrrr/watchtower
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    restart: always
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+volumes:
+  nc_data:
+  db_data:

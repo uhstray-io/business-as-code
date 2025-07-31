@@ -1,0 +1,91 @@
+cloud.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+
+	header {
+		# enable HSTS
+	  Strict-Transport-Security max-age=15552000;
+	}
+
+	@ws {
+		header Connection *Upgrade*
+		header Upgrade websocket
+	}
+
+	@collabora {
+    path /loleaflet/* # Loleaflet is the client part of LibreOffice Online
+    path /hosting/discovery # WOPI discovery URL
+    path /hosting/capabilities # Show capabilities as json
+    path /lool/* # Main websocket, uploads/downloads, presentations
+  }
+
+	reverse_proxy MY.IP.ADD.111:11000
+	reverse_proxy @ws MY.IP.ADD.111:3002
+	reverse_proxy @collabora MY.IP.ADD.111:9980
+}
+
+nocodb.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy MY.IP.ADD.110:8080
+}
+
+wisbot.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy MY.IP.ADD.113:8080
+}
+
+mixpost.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy MY.IP.ADD.110:9095
+}
+
+o11y.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy MY.IP.ADD.110:3000
+}
+
+n8n.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+    reverse_proxy MY.IP.ADD.110:5678
+}
+
+superset.example.com {
+	tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy MY.IP.ADD.111:8088
+}
+
+postiz.example.com {
+    tls {
+		dns cloudflare CLOUDFLARE_API_KEY
+		resolvers 1.1.1.1 1.0.0.1
+	}
+	reverse_proxy http://MY.IP.ADD.110:5000
+}
+
+# rustdesk.example.com {
+# 	tls {
+# 		dns cloudflare CLOUDFLARE_API_KEY
+# 		resolvers 1.1.1.1 1.0.0.1
+# 	}
+# 	reverse_proxy http://MY.IP.ADD.111:21114-21119
+# }

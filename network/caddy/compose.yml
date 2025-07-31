@@ -1,0 +1,18 @@
+name: caddy-reverse-proxy
+
+services:
+  caddy:
+    container_name: caddy
+    image: iarekylew00t/caddy-cloudflare:latest
+    restart: always
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - caddy-config:/config
+      - caddy-data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
+volumes:
+  caddy-config:
+  caddy-data:
