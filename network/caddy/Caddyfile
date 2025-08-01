@@ -1,6 +1,6 @@
-cloud.example.com {
+{$CLOUD_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
 
@@ -21,70 +21,70 @@ cloud.example.com {
     path /lool/* # Main websocket, uploads/downloads, presentations
   }
 
-	reverse_proxy MY.IP.ADD.111:11000
-	reverse_proxy @ws MY.IP.ADD.111:3002
-	reverse_proxy @collabora MY.IP.ADD.111:9980
+	reverse_proxy {$CLOUD_IP}:{$CLOUD_PORT_MAIN}
+	reverse_proxy @ws {$CLOUD_IP}:{$CLOUD_PORT_WS}
+	reverse_proxy @collabora {$CLOUD_IP}:{$CLOUD_PORT_COLLABORA}
 }
 
-nocodb.example.com {
+{$NOCODB_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy MY.IP.ADD.110:8080
+	reverse_proxy {$NOCODB_IP}:{$NOCODB_PORT}
 }
 
-wisbot.example.com {
+{$WISBOT_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy MY.IP.ADD.113:8080
+	reverse_proxy {$WISBOT_IP}:{$WISBOT_PORT}
 }
 
-mixpost.example.com {
+{$MIXPOST_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy MY.IP.ADD.110:9095
+	reverse_proxy {$MIXPOST_IP}:{$MIXPOST_PORT}
 }
 
-o11y.example.com {
+{$O11Y_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy MY.IP.ADD.110:3000
+	reverse_proxy {$O11Y_IP}:{$O11Y_PORT}
 }
 
-n8n.example.com {
+{$N8N_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-    reverse_proxy MY.IP.ADD.110:5678
+	reverse_proxy {$N8N_IP}:{$N8N_PORT}
 }
 
-superset.example.com {
+{$SUPERSET_DOMAIN} {
 	tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy MY.IP.ADD.111:8088
+	reverse_proxy {$SUPERSET_IP}:{$SUPERSET_PORT}
 }
 
-postiz.example.com {
+{$POSTIZ_DOMAIN} {
     tls {
-		dns cloudflare CLOUDFLARE_API_KEY
+		dns cloudflare {$CLOUDFLARE_API_KEY}
 		resolvers 1.1.1.1 1.0.0.1
 	}
-	reverse_proxy http://MY.IP.ADD.110:5000
+	reverse_proxy {$POSTIZ_IP}:{$POSTIZ_PORT}
 }
 
 # rustdesk.example.com {
 # 	tls {
-# 		dns cloudflare CLOUDFLARE_API_KEY
+# 		dns cloudflare {$CLOUDFLARE_API_KEY}
 # 		resolvers 1.1.1.1 1.0.0.1
 # 	}
 # 	reverse_proxy http://MY.IP.ADD.111:21114-21119
